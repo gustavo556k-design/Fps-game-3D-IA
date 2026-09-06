@@ -1,0 +1,6 @@
+{
+  "name": "Arena Strike 3D - Mobile FPS",
+  "description": "FPS 3D online multiplayer otimizado para mobile com lobby, controles touchscreen customizáveis, partidas em arena e suporte a PC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  body {
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    touch-action: none;
+    overscroll-behavior: none;
+    background-color: #0a0a0c;
+  }
+}
+
+.font-teko {
+  font-family: 'Teko', sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+/* Hitmarker animation */
+@keyframes hitmarker-anim {
+  0% { transform: scale(1.3) rotate(45deg); opacity: 1; }
+  100% { transform: scale(1) rotate(45deg); opacity: 0; }
+}
+
+.animate-hitmarker {
+  animation: hitmarker-anim 0.25s ease-out forwards;
+}
+
+/* Damage vignette */
+@keyframes damage-flash {
+  0% { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+.animate-damage {
+  animation: damage-flash 0.4s ease-out forwards;
+}
